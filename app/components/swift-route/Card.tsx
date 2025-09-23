@@ -54,7 +54,6 @@ export const Card = ({ type, image, title, flightProps, href }: CardProps) => {
       {/* Image */}
       <img src={image} alt="" className="w-full h-48 object-cover" />
 
-      {/* Title area */}
       <div className="p-5">
         <h3 className="text-lg font-semibold">{title}</h3>
       </div>

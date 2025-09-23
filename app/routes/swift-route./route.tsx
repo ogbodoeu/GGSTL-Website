@@ -1,5 +1,7 @@
 import { Card } from '../../components/swift-route/Card';
+import SwiftNavbar from '../../components/swift-route/navbar';
 import image from 'app/routes/swift-route./flight.jpeg';
+import Footer from '~/components/footer';
 const flights = [
   {
     id: 1,
@@ -50,6 +52,7 @@ const flights = [
 export default function SwiftRoute() {
   return (
     <>
+      <SwiftNavbar />
       <div className=" bg-white">
         <h1 className="text-3xl font-bold mb-6 text-center text-text-main-swift pt-10">
           Available Flights
@@ -71,6 +74,7 @@ export default function SwiftRoute() {
           ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 }
