@@ -1,46 +1,48 @@
+import ButtonSwift from './button';
+
 export default function SwiftNavbar() {
   return (
-    <nav className="flex items-center justify-between px-4 py-1 bg-white drop-shadow-lg h-52">
-      {/* Logo and Separator */}
-      <div className=" flex items-center space-x-2">
-        <div className=" w-52 h-full drop-shadow-[8px_0_4px_rgba(0,0,0,0.5)] bg-white flex items-center justify-center">
-          <img className="w-52 h-full" src="/GGSTL_LOGO.png"></img>
+    <nav className="flex items-center justify-around bg-bg-app-swift drop-shadow-xl h-56 text-xl">
+      <div className="flex h-full w-full items-center">
+        <div
+          className="w-52 h-full flex items-center justify-center hover:cursor-pointer shadow-[4px_0_8px_-3px_rgba(0,0,0,0.2)] z-10 mr-20"
+          onClick={() => (window.location.href = '/')}
+        >
+          <img className="w-52 h-full object-contain" src="/GGSTL_LOGO.png" />
         </div>
-        <div className="flex items-center space-x-1">
-          <img className="w-52 h-full" src="/GSROUTE_LOGO.jpeg"></img>
+
+        <div
+          className="w-52 h-full flex items-center justify-center hover:cursor-pointer"
+          onClick={() => (window.location.href = '/swift-route')}
+        >
+          <img className="w-52 h-full object-contain" src="/GSROUTE_LOGO.jpeg" />
         </div>
       </div>
-
-      {/* Navigation Links */}
-      <div className="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-700">
-        <a href="/swift/book" className="hover:text-pink-600 transition-colors">
+      <div className="hidden md:flex space-x-12 text-xl font-medium text-text-main-swift items-end flex-row w-full h-15 ml-10">
+        <a href="/swift/book" className="hover:text-text-highlight-swift transition-colors">
           Book Flight
         </a>
-        <a href="/swift/money-transfer" className="hover:text-pink-600 transition-colors">
+        <a
+          href="/swift/money-transfer"
+          className="hover:text-text-highlight-swift transition-colors"
+        >
           Money Transfer
         </a>
-        <a href="/swift/blog" className="hover:text-pink-600 transition-colors">
+        <a href="/swift/blog" className="hover:text-text-highlight-swift transition-colors">
           Blog Diaspora
         </a>
-        <a href="/swift/contact" className="hover:text-pink-600 transition-colors">
+        <a href="/swift/contact" className="hover:text-text-highlight-swift transition-colors">
           Contact
         </a>
       </div>
-
       {/* Auth Buttons */}
-      <div className="flex items-center space-x-2">
-        <a
-          href="/swift/login"
-          className="px-4 py-1 border border-pink-600 text-pink-600 rounded-md font-semibold text-sm hover:bg-pink-50 transition-colors"
-        >
+      <div className="flex items-center space-x-4 mr-15">
+        <ButtonSwift onClick={() => (window.location.href = '/swift/login')} BgType="clear">
           Log in
-        </a>
-        <a
-          href="/swift/signup"
-          className="px-4 py-1 bg-pink-600 text-white rounded-md font-semibold text-sm hover:bg-pink-700 transition-colors"
-        >
+        </ButtonSwift>
+        <ButtonSwift onClick={() => (window.location.href = '/swift/signup')} BgType="colored">
           Sign up
-        </a>
+        </ButtonSwift>
       </div>
     </nav>
   );
