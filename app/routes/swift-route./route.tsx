@@ -3,12 +3,22 @@ import { Card } from '../../components/swift-route/Card';
 import SwiftNavbar from '../../components/swift-route/navbar';
 import image from 'app/routes/swift-route./flight.jpeg';
 import Footer from '~/components/footer';
+import { useState } from 'react';
 export default function SwiftRoute() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <>
-      <SwiftNavbar />
-      <div className=" bg-white">
-        <Searchbar />
+      <SwiftNavbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <div className=" h-screen bg-white px-40 pt-10">
+        <Searchbar
+          onSearch={() => {
+            alert('Search clicked');
+          }}
+          onSwap={() => {
+            alert('Swap clicked');
+          }}
+        />
         <h1 className="text-3xl font-bold mb-6 text-center text-text-main-swift pt-10">
           Available Flights
         </h1>

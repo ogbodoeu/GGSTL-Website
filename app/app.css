@@ -46,6 +46,7 @@
   --color-bg-navbar-swift: var(--white);
   --color-bg-card-swift: var(--light-gray);
   --color-bg-input-swift: var(--white);
+  --color-highlight-swift: var(--red);
 
   /* Text color */
   --color-text-main-swift: var(--mid-gray);

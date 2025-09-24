@@ -16,7 +16,7 @@ export default function ButtonSwift({ onClick, children, BgType }: ButtonSwiftPr
   } else if (BgType === 'colored') {
     return (
       <button
-        className="h-20 w-40 px-4 py-2 rounded-full border-2 bg-btn-secondary-swift text-white font-semibold text-sm hover:bg-pink-700 transition-colors"
+        className="h-20 w-40 px-4 py-2 rounded-full border-2 bg-btn-secondary-swift text-white font-medium text-sm hover:bg-pink-700 transition-colors"
         onClick={onClick}
       >
         {children}

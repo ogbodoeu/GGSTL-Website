@@ -1,24 +1,50 @@
+import React from 'react';
 import ButtonSwift from './button';
 
-export default function SwiftNavbar() {
+export default function SwiftNavbar({
+  menuOpen,
+  setMenuOpen,
+}: {
+  menuOpen: boolean;
+  setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
   return (
-    <nav className="flex items-center justify-around bg-bg-app-swift drop-shadow-xl h-56 text-xl">
-      <div className="flex h-full w-full items-center">
+    <nav className="flex items-center justify-between bg-bg-app-swift drop-shadow-xl h-20 md:h-24 px-6 md:px-12">
+      <div className="flex items-center gap-6">
         <div
-          className="w-52 h-full flex items-center justify-center hover:cursor-pointer shadow-[0px_4px_13.300000190734863px_1px_rgba(0,0,0,0.25)] z-10 mr-20"
+          className="hidden md:flex w-40 h-full items-center justify-center hover:cursor-pointer shadow-[0px_4px_13px_1px_rgba(0,0,0,0.25)]"
           onClick={() => (window.location.href = '/')}
         >
-          <img className="w-52 h-full object-contain" src="/GGSTL_LOGO.png" />
+          <img className="w-40 h-full object-contain" src="/GGSTL_LOGO.png" />
         </div>
 
         <div
-          className="w-52 h-full flex items-center justify-center hover:cursor-pointer"
+          className="hidden md:flex w-40 h-full items-center justify-center hover:cursor-pointer"
           onClick={() => (window.location.href = '/swift-route')}
         >
-          <img className="w-52 h-full object-contain" src="/GSROUTE_LOGO.jpeg" />
+          <img className="w-40 h-full object-contain" src="/GSROUTE_LOGO.jpeg" />
+        </div>
+
+        <div
+          className="flex md:hidden h-full items-center cursor-pointer"
+          onClick={() => (window.location.href = '/')}
+        >
+          <img className="h-12 object-contain" src="/GGSTL_NAVBAR_LOGO.png" alt="Logo" />
         </div>
       </div>
-      <div className="hidden md:flex space-x-12 text-xl font-medium text-text-main-swift items-end flex-row w-full h-15 ml-10">
+
+      <button
+        className="md:hidden text-text-main-swift text-3xl"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        ☰
+      </button>
+
+      <div
+        className={`${
+          menuOpen ? 'flex' : 'hidden'
+        } flex-col md:flex md:flex-row md:items-center gap-6 md:gap-12 text-lg font-medium text-text-main-swift absolute md:static top-20 left-0 w-full md:w-auto bg-bg-app-swift md:bg-transparent p-6 md:p-0`}
+      >
         <a href="/swift/book" className="hover:text-text-highlight-swift transition-colors">
           Book Flight
         </a>
@@ -34,15 +60,15 @@ export default function SwiftNavbar() {
         <a href="/swift/contact" className="hover:text-text-highlight-swift transition-colors">
           Contact
         </a>
-      </div>
-      {/* Auth Buttons */}
-      <div className="flex items-center space-x-4 mr-15">
-        <ButtonSwift onClick={() => (window.location.href = '/swift/login')} BgType="clear">
-          Log in
-        </ButtonSwift>
-        <ButtonSwift onClick={() => (window.location.href = '/swift/signup')} BgType="colored">
-          Sign up
-        </ButtonSwift>
+
+        <div className="flex gap-4 mt-4 md:mt-0">
+          <ButtonSwift onClick={() => (window.location.href = '/swift/login')} BgType="clear">
+            Log in
+          </ButtonSwift>
+          <ButtonSwift onClick={() => (window.location.href = '/swift/signup')} BgType="colored">
+            Sign up
+          </ButtonSwift>
+        </div>
       </div>
     </nav>
   );
