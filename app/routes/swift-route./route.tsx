@@ -1,7 +1,40 @@
+import Searchbar from '~/components/swift-route/Searchbar';
 import { Card } from '../../components/swift-route/Card';
 import SwiftNavbar from '../../components/swift-route/navbar';
 import image from 'app/routes/swift-route./flight.jpeg';
 import Footer from '~/components/footer';
+export default function SwiftRoute() {
+  return (
+    <>
+      <SwiftNavbar />
+      <div className=" bg-white">
+        <Searchbar />
+        <h1 className="text-3xl font-bold mb-6 text-center text-text-main-swift pt-10">
+          Available Flights
+        </h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center pb-10">
+          {flights.map((flight) => (
+            <Card
+              href={`/swift/book/${flight.id}`}
+              key={flight.id}
+              type="flight"
+              image={image}
+              flightProps={{
+                cost: flight.cost,
+                currency: flight.currency,
+                from: flight.from,
+                destination: flight.destination,
+                isPromo: flight.isPromo,
+              }}
+            />
+          ))}
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
+}
+
 const flights = [
   {
     id: 1,
@@ -49,33 +82,3 @@ const flights = [
     image: '/flight.jpeg',
   },
 ];
-export default function SwiftRoute() {
-  return (
-    <>
-      <SwiftNavbar />
-      <div className=" bg-white">
-        <h1 className="text-3xl font-bold mb-6 text-center text-text-main-swift pt-10">
-          Available Flights
-        </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center pb-10">
-          {flights.map((flight) => (
-            <Card
-              href={`/swift/book/${flight.id}`}
-              key={flight.id}
-              type="flight"
-              image={image}
-              flightProps={{
-                cost: flight.cost,
-                currency: flight.currency,
-                from: flight.from,
-                destination: flight.destination,
-                isPromo: flight.isPromo,
-              }}
-            />
-          ))}
-        </div>
-      </div>
-      <Footer />
-    </>
-  );
-}
