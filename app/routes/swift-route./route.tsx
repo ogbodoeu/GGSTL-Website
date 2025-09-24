@@ -60,6 +60,7 @@ export default function SwiftRoute() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center pb-10">
           {flights.map((flight) => (
             <Card
+              href={`/swift/book/${flight.id}`}
               key={flight.id}
               type="flight"
               image={image}
