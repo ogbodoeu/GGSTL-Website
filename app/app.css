@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 @import 'tailwindcss';
 
 :root {
@@ -6,7 +9,7 @@
   --mid-gray: #3a4149;
   --black: #000000;
 
-  --red: #d51d54;
+  --red: #e03667;
 
   --light-blue: #1b829a;
   --dark-blue: #1d2e46;
@@ -15,9 +18,7 @@
 }
 
 @theme {
-  --font-sans:
-    'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-sans: 'Montserrat', sans-serif;
   /* ----- GGSTL LANDING ------ */
   --color-primary-gray: #3a4149;
   --color-primary-pink: #e03667;
@@ -46,7 +47,7 @@
   --color-bg-card-swift: var(--light-gray);
   --color-bg-input-swift: var(--white);
 
-  /* Text */
+  /* Text color */
   --color-text-main-swift: var(--mid-gray);
   --color-text-muted-swift: var(--light-gray);
   --color-text-input-swift: var(--mid-gray);
