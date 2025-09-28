@@ -134,14 +134,18 @@ export default function MoneyTransfer() {
         </div>
       </div>
       <div className="w-[80%] border-1 border-primary-pink rounded-full my-4" />
-        <div className=" min-w-[50%] max-w-[200px] flex flex-row items-center justify-center">
-            <img className="h-12 m-2" src="/icons/coupon.svg" />
-            <input className="rounded-full p-2 outline-0 shadow-2xl" type="text" placeholder="Promotional code" />
-        </div>
+      <div className=" min-w-[50%] max-w-[200px] flex flex-row items-center justify-center">
+        <img className="h-12 m-2" src="/icons/coupon.svg" />
+        <input
+          className="rounded-full p-2 outline-0 shadow-2xl"
+          type="text"
+          placeholder="Promotional code"
+        />
+      </div>
       <div className="w-[80%] border-1 border-primary-pink rounded-full my-4" />
-        <button className="cursor-pointer min-w-[150px] md:min-w-[250px] min-h-[50px] flex text-md md:text-[1.2rem] items-center justify-center font-bold border-2 border-primary-pink rounded-full bg-white text-primary-pink mt-8 mb-4">
-            Continue
-        </button>
+      <button className="cursor-pointer min-w-[150px] md:min-w-[250px] min-h-[50px] flex text-md md:text-[1.2rem] items-center justify-center font-bold border-2 border-primary-pink rounded-full bg-white text-primary-pink mt-8 mb-4">
+        Continue
+      </button>
     </div>
   );
 }
