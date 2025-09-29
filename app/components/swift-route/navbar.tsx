@@ -9,13 +9,13 @@ export default function SwiftNavbar({
   setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
   return (
-    <nav className="flex items-center justify-between bg-bg-app-swift drop-shadow-xl h-3/12 px-6 md:px-12">
+    <nav className="flex items-center justify-between bg-bg-app-swift drop-shadow-xl h-2/12 pr-6 md:pr-12">
       <div className="flex items-center gap-6 h-full">
         <div
           className="hidden md:flex w-52 h-full items-center justify-center hover:cursor-pointer shadow-[0px_4px_13.3px_1px_rgba(0,0,0,0.25)] z-10"
           onClick={() => (window.location.href = '/')}
         >
-          <img className="w-52 h-full object-contain" src="/GGSTL_LOGO.png" />
+          <img className="w-52 h-full object-contain" src="/LOGO_SQUARE.png" />
         </div>
 
         <div
@@ -29,7 +29,7 @@ export default function SwiftNavbar({
           className="flex md:hidden h-full items-center cursor-pointer"
           onClick={() => (window.location.href = '/')}
         >
-          <img className="h-12 object-contain" src="/GGSTL_NAVBAR_LOGO.png" alt="Logo" />
+          <img className="h-12 object-contain" src="/LOGO_SQUARE.png" alt="Logo" />
         </div>
       </div>
       <button
