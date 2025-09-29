@@ -7,6 +7,7 @@ import { useState } from 'react';
 import { Carousel } from '~/components/swift-route/carousel';
 import { PopUp } from '~/components/swift-route/pop-up';
 import SwiftFooter from '~/components/swift-route/swiftFooter';
+import { SlideButton } from '~/components/swift-route/action-menu';
 
 export default function SwiftRoute() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -59,6 +60,25 @@ export default function SwiftRoute() {
         <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center text-text-main-swift pt-10">
           Available Flights
         </h1>
+
+        <SlideButton
+          icon="$"
+          label="Money Transfer"
+          onClick={() => alert('Clicked!')}
+          position="top"
+        />
+        <SlideButton
+          icon="💬"
+          label="AI chat"
+          onClick={() => alert('Clicked!')}
+          position="middle"
+        />
+        <SlideButton
+          icon="⭐"
+          label="Loyalty Program"
+          onClick={() => alert('Clicked!')}
+          position="bottom"
+        />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center pb-10">
           {flights.map((flight) => (
