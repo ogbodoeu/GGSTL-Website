@@ -1,5 +1,5 @@
 interface FlightProps {
-  cost: number;
+  cost: string;
   currency?: string; // default "US$"
   from: string;
   destination: string;
@@ -12,17 +12,16 @@ interface CardProps {
   title?: string;
   flightProps?: FlightProps;
   href?: string;
+  onClick?: () => void;
 }
 
-export const Card = ({ type, image, title, flightProps, href }: CardProps) => {
+export const Card = ({ type, image, title, flightProps, onClick }: CardProps) => {
   if (type === 'flight' && flightProps) {
     const { cost, currency = 'US$', from, destination, isPromo } = flightProps;
     return (
       <div
         className="w-full sm:max-w-[475px] rounded-[30px] border border-stone-300 bg-white shadow-[3px_6px_19.4px_4px_rgba(0,0,0,0.25)] overflow-hidden hover:shadow-xl transition-shadow duration-300 hover:cursor-pointer"
-        onClick={() => {
-          if (href) window.location.href = href;
-        }}
+        onClick={onClick}
       >
         <div className="relative">
           <img
