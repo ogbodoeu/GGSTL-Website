@@ -5,17 +5,17 @@ export default function Products() {
     {
       title: 'SwiftRoute',
       description: 'Description for SwiftRoute',
-      url: '#',
+      url: '/swift-route',
     },
     {
       title: 'SmartMedX',
       description: 'Description for SmartMedX.',
-      url: '#',
+      url: '/smart-medx',
     },
     {
-      title: 'EcoTrack',
-      description: 'Description for EcoTrack.',
-      url: '#',
+      title: 'SmartConnectivitySolutions',
+      description: 'Description for SmartConnectivitySolutions.',
+      url: '/smart-connectivity-solutions',
     },
   ];
   return (
@@ -30,7 +30,6 @@ export default function Products() {
             <h4 className="text-lg font-semibold mb-2 text-inherit">{product.title}</h4>
             <p className="text-sm text-inherit">{product.description}</p>
           </div>
-          <div></div>
         </a>
       ))}
     </div>

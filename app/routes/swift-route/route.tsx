@@ -1,17 +1,18 @@
 import Searchbar from '~/components/swift-route/Searchbar';
 import { Card } from '../../components/swift-route/Card';
 import SwiftNavbar from '../../components/swift-route/navbar';
-import image from 'app/routes/swift-route./flight.jpeg';
+import image from 'app/routes/swift-route/flight.jpeg';
 import Footer from '~/components/footer';
 import { useState } from 'react';
 import { Carousel } from '~/components/swift-route/carousel';
 
 export default function SwiftRoute() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [menuState, setMenuState] = useState<'book-flight' | 'money-transfer' | 'diaspora'>('book-flight');
 
   return (
     <>
-      <SwiftNavbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <SwiftNavbar menuState={menuState} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="bg-white pt-10 px-4 sm:px-8 md:px-16 lg:px-40 min-h-screen">
         <Searchbar onSearch={() => alert('Search clicked')} onSwap={() => alert('Swap clicked')} />
         <Carousel />

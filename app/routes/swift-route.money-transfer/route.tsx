@@ -1,4 +1,5 @@
 import React from 'react';
+import { Carousel } from '~/components/swift-route/carousel';
 import MoneyTransfer from '~/components/swift-route/money-transfer';
 
 export default function route() {
@@ -17,8 +18,8 @@ export default function route() {
           and less people will ask for help.
         </p>
       </div>
-      <div>carrossel</div>
-      <div>carrossel</div>
+      <Carousel />
+      <Carousel />
       <div className="flex flex-col items-center">
         <MoneyTransfer />
       </div>
