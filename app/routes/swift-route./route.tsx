@@ -4,6 +4,7 @@ import SwiftNavbar from '../../components/swift-route/navbar';
 import image from 'app/routes/swift-route./flight.jpeg';
 import Footer from '~/components/footer';
 import { useState } from 'react';
+import { Carousel } from '~/components/swift-route/carousel';
 
 export default function SwiftRoute() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,6 +14,7 @@ export default function SwiftRoute() {
       <SwiftNavbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="bg-white pt-10 px-4 sm:px-8 md:px-16 lg:px-40 min-h-screen">
         <Searchbar onSearch={() => alert('Search clicked')} onSwap={() => alert('Swap clicked')} />
+        <Carousel />
 
         <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center text-text-main-swift pt-10">
           Available Flights
