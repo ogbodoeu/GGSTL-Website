@@ -6,6 +6,7 @@ import Footer from '~/components/footer';
 import { useState } from 'react';
 import { Carousel } from '~/components/swift-route/carousel';
 import { PopUp } from '~/components/swift-route/pop-up';
+import SwiftFooter from '~/components/swift-route/swiftFooter';
 
 export default function SwiftRoute() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -78,6 +79,7 @@ export default function SwiftRoute() {
         </div>
       </div>
       <Footer />
+      <SwiftFooter />
     </>
   );
 }
