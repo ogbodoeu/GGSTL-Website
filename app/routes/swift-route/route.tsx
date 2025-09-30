@@ -10,56 +10,13 @@ import SwiftFooter from '~/components/swift-route/swiftFooter';
 
 export default function SwiftRoute() {
   const [menuOpen, setMenuOpen] = useState(false);
-<<<<<<< HEAD:app/routes/swift-route./route.tsx
-  const [open, setOpen] = useState(false);
-
-  // Local flight data (normally this would come from an API)
-  const flights = [
-    {
-      id: 1,
-      title: 'Flight to Paris',
-      imageUrl: 'app/routes/swift-route./flight.jpeg',
-      origin: 'SAO',
-      destination: 'PAR',
-      dateRange: 'Mon 02 Sep – Sun 07 Sep',
-      tripType: 'Round Trip',
-      price: '1.840',
-      currency: 'U$',
-      airlineLogo: 'public/companies/Gol.png',
-      cost: '1.840',
-      from: 'SAO',
-      isPromo: true,
-    },
-    {
-      id: 2,
-      title: 'Flight to New York',
-      imageUrl: 'app/routes/swift-route./flight.jpeg',
-      origin: 'SAO',
-      destination: 'NYC',
-      dateRange: 'Tue 10 Sep – Mon 16 Sep',
-      tripType: 'Round Trip',
-      price: '2.120',
-      currency: 'U$',
-      airlineLogo: 'public/companies/Azul.png',
-      cost: '2.120',
-      from: 'SAO',
-      isPromo: false,
-    },
-  ];
-
-  return (
-    <>
-      <PopUp isOpen={open} onClose={() => setOpen(false)} flights={flights} />
-
-      <SwiftNavbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-
-=======
-  const [menuState, setMenuState] = useState<'book-flight' | 'money-transfer' | 'diaspora'>('book-flight');
+  const [menuState, setMenuState] = useState<'book-flight' | 'money-transfer' | 'diaspora'>(
+    'book-flight'
+  );
 
   return (
     <>
       <SwiftNavbar menuState={menuState} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
->>>>>>> feat/money-transfer-component:app/routes/swift-route/route.tsx
       <div className="bg-white pt-10 px-4 sm:px-8 md:px-16 lg:px-40 min-h-screen">
         <Searchbar onSearch={() => alert('Search clicked')} onSwap={() => alert('Swap clicked')} />
         <Carousel />
