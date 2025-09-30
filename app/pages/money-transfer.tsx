@@ -5,7 +5,7 @@ export default function MoneyTransferPage() {
   return (
     <div className="bg-white justify-center items-center min-h-dvh text-primary-gray ">
       <img
-        src="images/cashback.png"
+        src='/images/cashback.png'
         alt="Money Transfer"
         className="mr-4 w-full max-h-60 object-scale-down"
       />
@@ -17,8 +17,9 @@ export default function MoneyTransferPage() {
           and less people will ask for help.
         </p>
       </div>
+      <div className="w-[90%] flex justify-center items-center">
       <Carousel />
-      <Carousel />
+      </div>
       <div className="flex flex-col items-center">
         <MoneyTransfer />
       </div>
