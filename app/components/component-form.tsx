@@ -1,6 +1,10 @@
 import { useState } from 'react';
 
-export default function ContactForm() {
+interface FormProps {
+  color: string;
+}
+
+export default function ContactForm({ color }: FormProps) {
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -26,7 +30,7 @@ export default function ContactForm() {
 
   return (
     <div
-      className="flex justify-center items-center w-full bg-primary-gray drop-shadow-2xl border-b-2 border-black"
+      className={`flex justify-center items-center w-full bg-${color} drop-shadow-2xl border-b-2 border-black`}
       id="contact"
     >
       <form onSubmit={handleSubmit} className="text-white p-8 rounded-lg max-w-2xl space-y-4">

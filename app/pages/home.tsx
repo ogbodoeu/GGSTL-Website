@@ -23,7 +23,7 @@ export default function HomePage() {
           <Products />
         </section>
         <section className="h-screen snap-start flex items-center justify-center">
-          <ContactForm />
+          <ContactForm color="primary-gray" />
         </section>
       </main>
       <Footer />

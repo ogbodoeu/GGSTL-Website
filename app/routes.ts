@@ -6,6 +6,7 @@ export default [
     route('/swift-route', './pages/swift-route.tsx'),
     route('/swift-route/money-transfer', './pages/money-transfer.tsx'),
     route('/swift-route/blog', './pages/blog.tsx'),
+    route('/swift-route/contact', './pages/contact.tsx'),
   ]),
   route('/login', './pages/login.tsx'),
   route('/smart-medx', './pages/smart-medx.tsx'),
