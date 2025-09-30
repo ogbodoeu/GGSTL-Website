@@ -75,7 +75,7 @@ export const SearchBar = ({ onSearch, onSwap }: SearchBarProps) => {
           <img
             src="app/components/swift-route/magnifier.png"
             alt="Search"
-            className="w-8 h-8 md:w-14 md:h-14"
+            className="w-8 h-8 md:w-8 md:h-8"
           />
         </button>
       </div>

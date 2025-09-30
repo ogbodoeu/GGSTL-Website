@@ -52,7 +52,7 @@ export const Carousel = () => {
             type="button"
             onClick={movePrev}
             disabled={isDisabled('prev')}
-            className="pointer-events-auto w-12 h-full flex items-center justify-center disabled:opacity-40 bg-btn-primary-hover-swift/60 hover:bg-white z-60"
+            className="pointer-events-auto w-12 h-full flex items-center justify-center disabled:opacity-40 bg-btn-primary-hover-swift/60 hover:bg-btn-primary-hover-swift z-60"
           >
             ‹<span className="sr-only">Prev</span>
           </button>
@@ -61,7 +61,7 @@ export const Carousel = () => {
             type="button"
             onClick={moveNext}
             disabled={isDisabled('next')}
-            className="pointer-events-auto w-12 h-full flex items-center justify-center disabled:opacity-40 bg-btn-primary-hover-swift/75 hover:bg-white z-60"
+            className="pointer-events-auto w-12 h-full flex items-center justify-center disabled:opacity-40 bg-btn-primary-hover-swift/75 hover:bg-btn-primary-hover-swift z-60"
           >
             ›<span className="sr-only">Next</span>
           </button>
