@@ -1,8 +1,6 @@
 import Searchbar from '~/components/swift-route/Searchbar';
-import { Card } from '../../components/swift-route/Card';
-import SwiftNavbar from '../../components/swift-route/navbar';
+import { Card } from '../components/swift-route/Card';
 import image from 'app/routes/swift-route/flight.jpeg';
-import Footer from '~/components/footer';
 import { useState } from 'react';
 import { Carousel } from '~/components/swift-route/carousel';
 import { PopUp } from '~/components/swift-route/pop-up';
@@ -16,7 +14,6 @@ export default function SwiftRoute() {
 
   return (
     <>
-      <SwiftNavbar menuState={menuState} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="bg-white pt-10 px-4 sm:px-8 md:px-16 lg:px-40 min-h-screen">
         <Searchbar onSearch={() => alert('Search clicked')} onSwap={() => alert('Swap clicked')} />
         <Carousel />
@@ -43,8 +40,6 @@ export default function SwiftRoute() {
           ))}
         </div>
       </div>
-      <Footer />
-      <SwiftFooter />
     </>
   );
 }

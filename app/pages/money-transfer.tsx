@@ -1,8 +1,7 @@
-import React from 'react';
 import { Carousel } from '~/components/swift-route/carousel';
 import MoneyTransfer from '~/components/swift-route/money-transfer';
 
-export default function route() {
+export default function MoneyTransferPage() {
   return (
     <div className="bg-white justify-center items-center min-h-dvh text-primary-gray ">
       <img
