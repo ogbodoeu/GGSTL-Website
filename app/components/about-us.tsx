@@ -1,6 +1,6 @@
 export default function AboutSection() {
   return (
-    <section className="w-full bg-white">
+    <section className="w-full bg-white" id="about">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-2xl font-bold text-center mb-8">About Us</h2>
         <div className="flex flex-col md:flex-row items-center gap-6">
