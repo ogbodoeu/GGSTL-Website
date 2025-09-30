@@ -25,46 +25,51 @@ export default function Navbar({
         }`}
       >
         <div className="flex flex-col md:flex-row md:gap-4 items-center">
-          <a href="/" className="hover:underline"
-                      onClick={e => {
+          <a
+            href="/"
+            className="hover:underline"
+            onClick={(e) => {
               e.preventDefault();
-              }
-            }
-            >
+            }}
+          >
             Home
           </a>
-            <a
+          <a
             className="hover:underline"
-            onClick={e => {
+            onClick={(e) => {
               e.preventDefault();
               const section = document.getElementById('about');
               if (section) {
-              section.scrollIntoView({ behavior: 'smooth' });
+                section.scrollIntoView({ behavior: 'smooth' });
               }
             }}
-            >
+          >
             About us
-            </a>
-          <a href="/products"
-           className="hover:underline"
-              onClick={e => {
+          </a>
+          <a
+            href="/products"
+            className="hover:underline"
+            onClick={(e) => {
               e.preventDefault();
               const section = document.getElementById('products');
               if (section) {
-              section.scrollIntoView({ behavior: 'smooth' });
+                section.scrollIntoView({ behavior: 'smooth' });
               }
             }}
-           >
+          >
             Products
           </a>
-          <a href="/contact" className="hover:underline"
-              onClick={e => {
+          <a
+            href="/contact"
+            className="hover:underline"
+            onClick={(e) => {
               e.preventDefault();
               const section = document.getElementById('contact');
               if (section) {
-              section.scrollIntoView({ behavior: 'smooth' });
+                section.scrollIntoView({ behavior: 'smooth' });
               }
-            }}>
+            }}
+          >
             Contact
           </a>
         </div>

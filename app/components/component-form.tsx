@@ -25,7 +25,10 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="flex justify-center items-center w-full bg-primary-gray drop-shadow-2xl border-b-2 border-black" id='contact'>
+    <div
+      className="flex justify-center items-center w-full bg-primary-gray drop-shadow-2xl border-b-2 border-black"
+      id="contact"
+    >
       <form onSubmit={handleSubmit} className="text-white p-8 rounded-lg max-w-2xl space-y-4">
         <h2 className="text-2xl font-semibold">
           <span className="text-white">Contact Us</span>
