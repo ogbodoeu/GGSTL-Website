@@ -1,8 +1,6 @@
 import Searchbar from '~/components/swift-route/Searchbar';
-import { Card } from '../../components/swift-route/Card';
-import SwiftNavbar from '../../components/swift-route/navbar';
-import image from 'app/routes/swift-route./flight.jpeg';
-import Footer from '~/components/footer';
+import { Card } from '../components/swift-route/Card';
+import image from 'app/routes/swift-route/flight.jpeg';
 import { useState } from 'react';
 import { Carousel } from '~/components/swift-route/carousel';
 import { PopUp } from '~/components/swift-route/pop-up';
@@ -11,49 +9,16 @@ import { SlideButton } from '~/components/swift-route/action-menu';
 
 export default function SwiftRoute() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [menuState, setMenuState] = useState<'book-flight' | 'money-transfer' | 'diaspora'>(
+    'book-flight'
+  );
   const [open, setOpen] = useState(false);
-
-  // Local flight data (normally this would come from an API)
-  const flights = [
-    {
-      id: 1,
-      title: 'Flight to Paris',
-      imageUrl: 'app/routes/swift-route./flight.jpeg',
-      origin: 'SAO',
-      destination: 'PAR',
-      dateRange: 'Mon 02 Sep – Sun 07 Sep',
-      tripType: 'Round Trip',
-      price: '1.840',
-      currency: 'U$',
-      airlineLogo: 'public/companies/Gol.png',
-      cost: '1.840',
-      from: 'SAO',
-      isPromo: true,
-    },
-    {
-      id: 2,
-      title: 'Flight to New York',
-      imageUrl: 'app/routes/swift-route./flight.jpeg',
-      origin: 'SAO',
-      destination: 'NYC',
-      dateRange: 'Tue 10 Sep – Mon 16 Sep',
-      tripType: 'Round Trip',
-      price: '2.120',
-      currency: 'U$',
-      airlineLogo: 'public/companies/Azul.png',
-      cost: '2.120',
-      from: 'SAO',
-      isPromo: false,
-    },
-  ];
 
   return (
     <>
-      <PopUp isOpen={open} onClose={() => setOpen(false)} flights={flights} />
-
-      <SwiftNavbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-
       <div className="bg-white pt-10 px-4 sm:px-8 md:px-16 lg:px-40 min-h-screen">
+        <PopUp isOpen={open} onClose={() => setOpen(false)} flights={flights} />
+
         <Searchbar onSearch={() => alert('Search clicked')} onSwap={() => alert('Swap clicked')} />
         <Carousel />
 
@@ -98,8 +63,39 @@ export default function SwiftRoute() {
           ))}
         </div>
       </div>
-      <Footer />
-      <SwiftFooter />
     </>
   );
 }
+
+const flights = [
+  {
+    id: 1,
+    title: 'Flight to Paris',
+    imageUrl: 'app/routes/swift-route/flight.jpeg',
+    origin: 'SAO',
+    destination: 'PAR',
+    dateRange: 'Mon 02 Sep – Sun 07 Sep',
+    tripType: 'Round Trip',
+    price: '1.840',
+    currency: 'U$',
+    airlineLogo: 'public/companies/Gol.png',
+    cost: '1.840',
+    from: 'SAO',
+    isPromo: true,
+  },
+  {
+    id: 2,
+    title: 'Flight to New York',
+    imageUrl: 'app/routes/swift-route/flight.jpeg',
+    origin: 'SAO',
+    destination: 'NYC',
+    dateRange: 'Tue 10 Sep – Mon 16 Sep',
+    tripType: 'Round Trip',
+    price: '2.120',
+    currency: 'U$',
+    airlineLogo: 'public/companies/Azul.png',
+    cost: '2.120',
+    from: 'SAO',
+    isPromo: false,
+  },
+];

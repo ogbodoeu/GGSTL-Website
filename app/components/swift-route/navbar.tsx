@@ -44,27 +44,30 @@ export default function SwiftNavbar({
           menuOpen ? 'flex' : 'hidden'
         } flex-col md:flex md:flex-row md:items-end gap-6 md:gap-12 text-xl font-medium text-text-main-swift absolute md:static top-full left-0 w-full md:w-auto bg-bg-app-swift md:bg-transparent p-6 md:p-0`}
       >
-        <a href="/swift/book" className="hover:text-text-highlight-swift transition-colors">
+        <a href="/swift-route" className="hover:text-text-highlight-swift transition-colors">
           Book Flight
         </a>
         <a
-          href="/swift/money-transfer"
+          href="/swift-route/money-transfer"
           className="hover:text-text-highlight-swift transition-colors"
         >
           Money Transfer
         </a>
-        <a href="/swift/blog" className="hover:text-text-highlight-swift transition-colors">
+        <a href="/swift-route/blog" className="hover:text-text-highlight-swift transition-colors">
           Blog Diaspora
         </a>
-        <a href="/swift/contact" className="hover:text-text-highlight-swift transition-colors">
+        <a
+          href="/swift-route/contact"
+          className="hover:text-text-highlight-swift transition-colors"
+        >
           Contact
         </a>
 
         <div className="flex gap-4 mt-4 md:mt-0">
-          <ButtonSwift onClick={() => (window.location.href = '/swift/login')} BgType="clear">
+          <ButtonSwift onClick={() => (window.location.href = '/login')} BgType="clear">
             Log in
           </ButtonSwift>
-          <ButtonSwift onClick={() => (window.location.href = '/swift/signup')} BgType="colored">
+          <ButtonSwift onClick={() => (window.location.href = '/signup')} BgType="colored">
             Sign up
           </ButtonSwift>
         </div>
