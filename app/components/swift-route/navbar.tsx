@@ -64,10 +64,10 @@ export default function SwiftNavbar({
         </a>
 
         <div className="flex gap-4 mt-4 md:mt-0">
-          <ButtonSwift onClick={() => (window.location.href = '/swift/login')} BgType="clear">
+          <ButtonSwift onClick={() => (window.location.href = '/login')} BgType="clear">
             Log in
           </ButtonSwift>
-          <ButtonSwift onClick={() => (window.location.href = '/swift/signup')} BgType="colored">
+          <ButtonSwift onClick={() => (window.location.href = '/signup')} BgType="colored">
             Sign up
           </ButtonSwift>
         </div>
