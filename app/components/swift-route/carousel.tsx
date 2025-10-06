@@ -5,22 +5,22 @@ const data = {
     {
       title: 'Beautiful Landscape',
       imageUrl: 'app/routes/swift-route/flight.jpeg',
-      link: 'app/routes/swift-route/flight.jpeg',
+      link: '/images/flight.jpeg',
     },
     {
       title: 'City at Night',
       imageUrl: 'app/routes/swift-route/flight.jpeg',
-      link: 'app/routes/swift-route/flight.jpeg',
+      link: '/images/flight.jpeg',
     },
     {
       title: 'Mountain View',
       imageUrl: 'app/routes/swift-route/flight.jpeg',
-      link: 'app/routes/swift-route/flight.jpeg',
+      link: '/images/flight.jpeg',
     },
     {
       title: 'Sunny Beach',
       imageUrl: 'app/routes/swift-route/flight.jpeg',
-      link: 'app/routes/swift-route/flight.jpeg',
+      link: '/images/flight.jpeg',
     },
     // ...
   ],

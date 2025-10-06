@@ -1,6 +1,5 @@
 import Searchbar from '~/components/swift-route/Searchbar';
 import { Card } from '../components/swift-route/Card';
-import image from 'app/routes/swift-route/flight.jpeg';
 import { useState } from 'react';
 import { Carousel } from '~/components/swift-route/carousel';
 import { PopUp } from '~/components/swift-route/pop-up';
@@ -15,6 +14,7 @@ export default function SwiftRoute() {
     'book-flight'
   );
   const [open, setOpen] = useState(false);
+  const image = 'images/flight.jpeg';
 
   return (
     <>

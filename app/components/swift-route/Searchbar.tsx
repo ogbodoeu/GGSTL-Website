@@ -24,11 +24,7 @@ export const SearchBar = ({ onSearch, onSwap }: SearchBarProps) => {
           className="self-center md:self-auto w-12 h-12 md:w-16 md:h-16 bg-white rounded-full border-2 md:border-3 border-pink-600 flex items-center justify-center cursor-pointer z-10"
           onClick={onSwap}
         >
-          <img
-            src="app/components/swift-route/arrows.png"
-            alt="Swap"
-            className="w-6 h-6 md:w-10 md:h-10"
-          />
+          <img src="/icons/arrows.png" alt="Swap" className="w-6 h-6 md:w-10 md:h-10" />
         </div>
 
         {/* Destination input */}
@@ -72,11 +68,7 @@ export const SearchBar = ({ onSearch, onSwap }: SearchBarProps) => {
           onClick={onSearch}
           className="self-center md:self-auto w-14 h-14 md:w-20 md:h-20 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-700 transition-colors"
         >
-          <img
-            src="app/components/swift-route/magnifier.png"
-            alt="Search"
-            className="w-8 h-8 md:w-8 md:h-8"
-          />
+          <img src="/icons/magnifier.png" alt="Search" className="w-8 h-8 md:w-8 md:h-8" />
         </button>
       </div>
     </div>

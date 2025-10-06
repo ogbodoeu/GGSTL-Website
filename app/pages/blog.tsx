@@ -1,7 +1,8 @@
 import { Card } from '~/components/swift-route/Card';
-import image from 'app/routes/swift-route/flight.jpeg';
 
 export const Blog = () => {
+
+  const image = 'images/flight.jpeg';
   return (
     <div className="bg-white pt-10 px-4 sm:px-8 md:px-16 lg:px-40 min-h-screen text-text-main-swift">
       <h1 className="text-2xl font-bold mb-4">Diaspora Services</h1>

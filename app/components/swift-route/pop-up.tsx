@@ -54,11 +54,7 @@ export const PopUp = ({ isOpen, onClose, flights }: PopUpProps) => {
               <div>
                 <div className="flex items-center space-x-2 text-lg sm:text-xl font-semibold text-gray-700">
                   <span>{flight.origin}</span>
-                  <img
-                    src="app/components/swift-route/arrows.png"
-                    alt="arrows"
-                    className="w-5 h-5"
-                  />
+                  <img src="/icons/arrows.png" alt="arrows" className="w-5 h-5" />
                   <span>{flight.destination}</span>
                 </div>
                 <p className="text-xs sm:text-sm text-gray-500">{flight.dateRange}</p>
