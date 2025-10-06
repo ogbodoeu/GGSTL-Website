@@ -6,9 +6,9 @@ interface SearchBarProps {
 export const SearchBar = ({ onSearch, onSwap }: SearchBarProps) => {
   return (
     <div className="w-full max-w-[1560px] mx-auto p-4">
-      <div className="w-full bg-white lg:rounded-full rounded-3xl outline-[3px] outline-pink-600 flex flex-col gap-4 p-4 md:flex-row md:items-center md:gap-6">
+      <div className="w-full bg-white rounded-3xl lg:rounded-full outline-[3px] outline-pink-600 flex flex-col gap-4 p-4 md:flex-row md:items-center md:gap-4 flex-wrap">
         {/* Origin input */}
-        <div className="flex flex-col flex-1 bg-white rounded-full shadow-md outline-[3px] outline-pink-600 px-4 py-2">
+        <div className="flex flex-col flex-1 min-w-[200px] bg-white rounded-full shadow-md outline-[3px] outline-pink-600 px-4 py-2">
           <label className="text-pink-600 text-sm md:text-base font-medium font-['Montserrat']">
             Origin
           </label>
@@ -32,7 +32,7 @@ export const SearchBar = ({ onSearch, onSwap }: SearchBarProps) => {
         </div>
 
         {/* Destination input */}
-        <div className="flex flex-col flex-1 bg-white rounded-full shadow-md outline-[3px] outline-pink-600 px-4 py-2">
+        <div className="flex flex-col flex-1 min-w-[200px] bg-white rounded-full shadow-md outline-[3px] outline-pink-600 px-4 py-2">
           <label className="text-pink-600 text-sm md:text-base font-medium font-['Montserrat']">
             Destination
           </label>
@@ -44,7 +44,7 @@ export const SearchBar = ({ onSearch, onSwap }: SearchBarProps) => {
         </div>
 
         {/* Date input */}
-        <div className="flex flex-col flex-1 bg-white rounded-full shadow-md outline-[3px] outline-pink-600 px-4 py-2">
+        <div className="flex flex-col flex-1 min-w-[150px] bg-white rounded-full shadow-md outline-[3px] outline-pink-600 px-4 py-2">
           <label className="text-pink-600 text-sm md:text-base font-medium font-['Montserrat']">
             Date
           </label>
@@ -56,7 +56,7 @@ export const SearchBar = ({ onSearch, onSwap }: SearchBarProps) => {
         </div>
 
         {/* Passengers/Class input */}
-        <div className="flex flex-col flex-1 bg-white rounded-full shadow-md outline-[3px] outline-pink-600 px-4 py-2">
+        <div className="flex flex-col flex-1 min-w-[180px] bg-white rounded-full shadow-md outline-[3px] outline-pink-600 px-4 py-2">
           <label className="text-pink-600 text-sm md:text-base font-medium font-['Montserrat']">
             Passengers and Class
           </label>
