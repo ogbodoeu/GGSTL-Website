@@ -28,24 +28,27 @@ export default function SwiftRoute() {
           Available Flights
         </h1>
 
-        <SlideButton
-          icon="$"
-          label="Money Transfer"
-          onClick={() => alert('Clicked!')}
-          position="top"
-        />
-        <SlideButton
-          icon="💬"
-          label="AI chat"
-          onClick={() => setChatOpen((prev) => !prev)}
-          position="middle"
-        />
-        <SlideButton
-          icon="⭐"
-          label="Loyalty Program"
-          onClick={() => alert('Clicked!')}
-          position="bottom"
-        />
+        <div className="fixed right-4 top-1/4 z-30 flex flex-col gap-40 ">
+          <SlideButton
+            icon="$"
+            label="Money Transfer"
+            onClick={() => alert('Clicked!')}
+            position="top"
+          />
+          <SlideButton
+            icon="💬"
+            label="AI chat"
+            onClick={() => setChatOpen((prev) => !prev)}
+            position="middle"
+          />
+          <SlideButton
+            icon="⭐"
+            label="Loyalty Program"
+            onClick={() => alert('Clicked!')}
+            position="bottom"
+          />
+        </div>
+
         <Chatbot open={chatOpen} setOpen={setChatOpen} />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center pb-10">
