@@ -77,7 +77,7 @@ const flights = [
   {
     id: 1,
     title: 'Flight to Paris',
-    imageUrl: 'app/routes/swift-route/flight.jpeg',
+    imageUrl: 'images/flight.jpeg',
     origin: 'SAO',
     destination: 'PAR',
     dateRange: 'Mon 02 Sep – Sun 07 Sep',
@@ -92,7 +92,7 @@ const flights = [
   {
     id: 2,
     title: 'Flight to New York',
-    imageUrl: 'app/routes/swift-route/flight.jpeg',
+    imageUrl: 'images/flight.jpeg',
     origin: 'SAO',
     destination: 'NYC',
     dateRange: 'Tue 10 Sep – Mon 16 Sep',
