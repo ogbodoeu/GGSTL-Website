@@ -59,16 +59,6 @@ export const Card = ({ type, image, title, flightProps, onClick }: CardProps) =>
   }
 
   return (
-    // <div className="bg-bg-app rounded-[20px] shadow-md overflow-hidden w-full sm:max-w-80">
-    //   <img
-    //     src={image}
-    //     alt=""
-    //     className="w-full sm:w-[475px] h-60 sm:h-[246px] object-cover rounded-t-[30px]"
-    //   />
-    //   <div className="p-5">
-    //     <h3 className="text-lg text-text-input font-semibold">{title}</h3>
-    //   </div>
-    // </div>
     <div
       className="w-full sm:max-w-[475px] rounded-[30px] border border-stone-300 bg-white shadow-[3px_6px_19.4px_4px_rgba(0,0,0,0.25)] overflow-hidden hover:shadow-xl transition-shadow duration-300 hover:cursor-pointer"
       onClick={onClick}

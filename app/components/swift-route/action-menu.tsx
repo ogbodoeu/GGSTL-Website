@@ -22,7 +22,7 @@ export const SlideButton = ({ icon, label, onClick, position }: SlideButtonProps
       onClick={onClick}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className={`fixed right-0 ${pos} flex items-center group cursor-pointer z-21`}
+      className={`fixed right-0 ${pos} flex items-center group cursor-pointer z-31`}
     >
       <div
         className={`
