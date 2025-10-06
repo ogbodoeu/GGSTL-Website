@@ -3,12 +3,14 @@ export default function AboutSection() {
     <section className="w-full bg-white" id="about">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-2xl font-bold text-center mb-8">About Us</h2>
-        <div className="flex flex-col md:flex-row items-center gap-6">
-          {/* Image placeholder */}
-          <div className="w-full md:w-1/2 h-48 bg-gray-300" />
+        <div className="flex flex-col md:flex-row items-center gap-6 my-4">
+          <img src="/GGSTL_LOGO.png" alt="About Us" className="w-full md:w-1/2 h-48 object-cover" />
           {/* Text */}
           <div className="w-full md:w-1/2 text-gray-700 text-sm leading-relaxed">
-            <p>Here you have a space to share with public a text about your company.</p>
+            <p>
+              Gilead has been making lives better by driving innovation in healthcare, technology,
+              and global connectivity. Gilead is registered and incorporated in the UK.
+            </p>
           </div>
         </div>
       </div>
@@ -22,7 +24,10 @@ export default function AboutSection() {
               <img src="/icons/Target.png" alt="Values Icon" className="w-12 h-12" />
             </div>
             <h3 className="text-lg font-semibold">Mission</h3>
-            <p className="text-sm text-gray-600">Here you’ll write the mission of Gilead.</p>
+            <p className="text-sm text-gray-600">
+              To harness the power of science, data, and intelligent systems to deliver better
+              healthcare solutions, seamless travel, and secure financial services.
+            </p>
           </div>
 
           {/* Vision */}
@@ -31,7 +36,12 @@ export default function AboutSection() {
               <img src="/icons/Eye.png" alt="Values Icon" className="w-12 h-12" />
             </div>
             <h3 className="text-lg font-semibold">Vision</h3>
-            <p className="text-sm text-gray-600">Here you`ll write the vision of Gilead.</p>
+            <p className="text-sm text-gray-600">
+              Make advanced digital infrastructure simple, secure, and accessible—so travel,
+              payments, healthcare, connectivity, agriculture, and everyday services work seamlessly
+              everywhere, powered by AI, private 5G/edge, and cloud-native engineering for reliable,
+              affordable, and sustainable impact.
+            </p>
           </div>
 
           {/* Values */}
@@ -40,7 +50,15 @@ export default function AboutSection() {
               <img src="/icons/Diamond.png" alt="Values Icon" className="w-12 h-12" />
             </div>
             <h3 className="text-lg font-semibold">Values</h3>
-            <p className="text-sm text-gray-600">Here you’ll write the values of Gilead.</p>
+            <p className="text-sm text-gray-600">
+              Deliver practical, compliant platforms with transparent pricing and measurable
+              outcomes: SwiftRoute (flights & remittance), SmartMedX (AI diagnostics), SCS
+              (Open5GS/O-RAN private networks), SmartAgTech (precision farming, field connectivity &
+              insights), EdgeShield DevSecOps (secure software delivery), and Charge&Wash (cashless
+              EV charging & laundromats). We build reliably, scale efficiently, protect data by
+              design, and partner with clients across emerging and developed markets to turn complex
+              technology into everyday value.
+            </p>
           </div>
         </div>
       </div>
