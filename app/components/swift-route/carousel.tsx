@@ -47,12 +47,12 @@ export const Carousel = () => {
     <div className="carousel my-12 mx-auto">
       <div className="relative overflow-hidden">
         {/* nav buttons (on top) */}
-        <div className="absolute inset-0 flex items-center justify-between z-50 pointer-events-none">
+        <div className="absolute inset-0 flex items-center justify-between z-10 pointer-events-none">
           <button
             type="button"
             onClick={movePrev}
             disabled={isDisabled('prev')}
-            className="pointer-events-auto w-12 h-full flex items-center justify-center disabled:opacity-40 bg-btn-primary-hover-swift/60 hover:bg-btn-primary-hover-swift z-60"
+            className="pointer-events-auto w-12 h-full flex items-center justify-center disabled:opacity-40 bg-btn-primary-hover-swift/60 hover:bg-btn-primary-hover-swift z-10"
           >
             ‹<span className="sr-only">Prev</span>
           </button>
@@ -61,7 +61,7 @@ export const Carousel = () => {
             type="button"
             onClick={moveNext}
             disabled={isDisabled('next')}
-            className="pointer-events-auto w-12 h-full flex items-center justify-center disabled:opacity-40 bg-btn-primary-hover-swift/75 hover:bg-btn-primary-hover-swift z-60"
+            className="pointer-events-auto w-12 h-full flex items-center justify-center disabled:opacity-40 bg-btn-primary-hover-swift/75 hover:bg-btn-primary-hover-swift z-10"
           >
             ›<span className="sr-only">Next</span>
           </button>
@@ -88,7 +88,7 @@ export const Carousel = () => {
               {/* overlay (title) — doesn't block pointer events when hidden) */}
               <a
                 href={resource.link}
-                className="absolute inset-0 flex items-end justify-center px-4 py-6 transition-opacity duration-300 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto bg-btn-primary-hover-swift/75 z-10"
+                className="absolute inset-0 flex items-end justify-center px-4 py-6 transition-opacity duration-300 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto bg-btn-primary-hover-swift/75"
               >
                 <h3 className="text-white text-xl">{resource.title}</h3>
               </a>
