@@ -8,7 +8,7 @@ export default function Navbar({
   setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
   return (
-    <nav className="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 bg-primary-gray text-white font-sans">
+    <nav className="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 bg-primary-gray text-white font-sans sticky top-0 z-50 ">
       <div className="flex items-center justify-between w-full md:w-auto sm:min-h-12">
         <img
           src="/GGSTL_NAVBAR_LOGO.png"
@@ -25,16 +25,51 @@ export default function Navbar({
         }`}
       >
         <div className="flex flex-col md:flex-row md:gap-4 items-center">
-          <a href="/home" className="hover:underline">
+          <a
+            href="/"
+            className="hover:underline"
+            onClick={(e) => {
+              e.preventDefault();
+            }}
+          >
             Home
           </a>
-          <a href="/about" className="hover:underline">
+          <a
+            className="hover:underline"
+            onClick={(e) => {
+              e.preventDefault();
+              const section = document.getElementById('about');
+              if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+          >
             About us
           </a>
-          <a href="/products" className="hover:underline">
+          <a
+            href="/products"
+            className="hover:underline"
+            onClick={(e) => {
+              e.preventDefault();
+              const section = document.getElementById('products');
+              if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+          >
             Products
           </a>
-          <a href="/contact" className="hover:underline">
+          <a
+            href="/contact"
+            className="hover:underline"
+            onClick={(e) => {
+              e.preventDefault();
+              const section = document.getElementById('contact');
+              if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+          >
             Contact
           </a>
         </div>
