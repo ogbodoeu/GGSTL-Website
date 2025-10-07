@@ -20,14 +20,14 @@ export default function Products() {
     },
   ];
   return (
-    <div className="flex flex-col sm:flex-row gap-8 w-full p-8" id="products">
+    <div className="flex flex-col sm:flex-row gap-8 w-full p-8 over" id="products">
       {products.map((product, index) => (
         <a
           href={product.url}
-          className="bg-inherit border-2 border-primary-gray h-96 w-full md:w-1/3 rounded-lg p-6 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
+          className="bg-inherit border-2 border-primary-gray min-h-96 w-full md:w-1/3 rounded-lg p-6 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
           key={index}
         >
-          <div className="p-4 flex flex-col items-center">
+          <div className="p-4 flex flex-col items-center overflow-hidden ">
             <h4 className="text-lg font-semibold mb-2 text-inherit">{product.title}</h4>
             <img
               src={`/images/${product.title}.png`}

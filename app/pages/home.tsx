@@ -12,17 +12,17 @@ export default function HomePage() {
   return (
     <>
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <main className="h-screen snap-y snap-mandatory overflow-y-scroll flex flex-col bg-white text-primary-gray text-center">
-        <section className="h-screen snap-start flex items-center justify-center">
+      <main className="snap-y snap-mandatory overflow-y-scroll flex flex-col bg-white text-primary-gray text-center">
+        <section className="snap-start flex items-center justify-center">
           <Introduction />
         </section>
-        <section className="h-screen snap-start flex items-center justify-center">
+        <section className="snap-start flex items-center justify-center">
           <AboutSection />
         </section>
-        <section className="h-screen snap-start flex items-center justify-center">
+        <section className="snap-start flex items-center justify-center">
           <Products />
         </section>
-        <section className="h-screen snap-start flex items-center justify-center">
+        <section className="snap-start flex items-center justify-center">
           <ContactForm color="primary-gray" />
         </section>
       </main>
