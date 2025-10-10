@@ -4,7 +4,11 @@ export default function AboutSection() {
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-2xl font-bold text-center mb-8">About Us</h2>
         <div className="flex flex-col md:flex-row items-center gap-6 my-4">
-          <img src="/GGSTL_LOGO.png" alt="About Us" className="w-full md:w-1/2 h-48 object-contain" />
+          <img
+            src="/GGSTL_LOGO.png"
+            alt="About Us"
+            className="w-full md:w-1/2 h-48 object-contain"
+          />
           {/* Text */}
           <div className="w-full md:w-1/2 text-gray-700 text-sm leading-relaxed">
             <p>

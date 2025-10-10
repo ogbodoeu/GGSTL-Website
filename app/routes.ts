@@ -11,4 +11,7 @@ export default [
   route('/login', './pages/login.tsx'),
   route('/smart-medx', './pages/smart-medx.tsx'),
   route('/smart-connectivity-solutions', './pages/smart-connectivity-solutions.tsx'),
+  route('/smart-agtech', './pages/smart-agtech.tsx'),
+  route('/smart-edgeshield-devsecops', './pages/smart-edgeshield.tsx'),
+  route('/smart-charge-wash', './pages/smart-charge-wash.tsx'),
 ] satisfies RouteConfig;

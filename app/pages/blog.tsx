@@ -1,7 +1,6 @@
 import { Card } from '~/components/swift-route/Card';
 
 export const Blog = () => {
-
   const image = 'images/flight.jpeg';
   return (
     <div className="bg-white pt-10 px-4 sm:px-8 md:px-16 lg:px-40 min-h-screen text-text-main-swift">

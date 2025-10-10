@@ -30,6 +30,7 @@ export default function Navbar({
             className="hover:underline"
             onClick={(e) => {
               e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
           >
             Home
@@ -47,17 +48,17 @@ export default function Navbar({
             About us
           </a>
           <a
-            href="/products"
+            href="/solutions"
             className="hover:underline"
             onClick={(e) => {
               e.preventDefault();
-              const section = document.getElementById('products');
+              const section = document.getElementById('solutions');
               if (section) {
                 section.scrollIntoView({ behavior: 'smooth' });
               }
             }}
           >
-            Products
+            Solutions
           </a>
           <a
             href="/contact"
@@ -77,7 +78,7 @@ export default function Navbar({
           <a href="/login" className="bg-inherit text-white px-4 border-1 py-2 rounded-3xl">
             Log in
           </a>
-          <a href="/signup" className="bg-white text-primary-gray px-4 py-2 rounded-3xl">
+          <a href="/login" className="bg-white text-primary-gray px-4 py-2 rounded-3xl">
             Sign Up
           </a>
         </div>

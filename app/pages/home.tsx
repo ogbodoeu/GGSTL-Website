@@ -5,6 +5,7 @@ import Footer from '~/components/footer';
 import Introduction from '~/components/introduction';
 import Navbar from '~/components/navbar';
 import Products from '~/components/Products';
+import Solutions from '~/components/solutions';
 
 export default function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,8 +20,11 @@ export default function HomePage() {
         <section className="snap-start flex items-center justify-center">
           <AboutSection />
         </section>
-        <section className="snap-start flex items-center justify-center">
+        {/* <section className="snap-start flex items-center justify-center">
           <Products />
+        </section> */}
+        <section className="snap-start flex items-center justify-center">
+          <Solutions />
         </section>
         <section className="snap-start flex items-center justify-center">
           <ContactForm color="primary-gray" />
