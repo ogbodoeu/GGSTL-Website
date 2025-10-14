@@ -8,6 +8,8 @@ export default [
     route('/swift-route/blog', './pages/blog.tsx'),
     route('/swift-route/contact', './pages/contact.tsx'),
   ]),
+  route('/solutions', './pages/solutions.tsx'),
+
   route('/login', './pages/login.tsx'),
   route('/smart-medx', './pages/smart-medx.tsx'),
   route('/smart-connectivity-solutions', './pages/smart-connectivity-solutions.tsx'),

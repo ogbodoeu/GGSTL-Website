@@ -50,15 +50,28 @@ export default function Navbar({
           <a
             href="/solutions"
             className="hover:underline"
+            // onClick={(e) => {
+            //   e.preventDefault();
+            //   const section = document.getElementById('solutions');
+            //   if (section) {
+            //     section.scrollIntoView({ behavior: 'smooth' });
+            //   }
+            // }}
+          >
+            Solutions
+          </a>
+          <a
+            href="/solutions"
+            className="hover:underline"
             onClick={(e) => {
               e.preventDefault();
-              const section = document.getElementById('solutions');
+              const section = document.getElementById('companies');
               if (section) {
                 section.scrollIntoView({ behavior: 'smooth' });
               }
             }}
           >
-            Solutions
+            Companies
           </a>
           <a
             href="/contact"

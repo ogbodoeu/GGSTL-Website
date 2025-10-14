@@ -20,7 +20,7 @@ export default function Products() {
     },
   ];
   return (
-    <div className="flex flex-col sm:flex-row gap-8 w-full p-8 over" id="products">
+    <div className="flex flex-col sm:flex-row gap-8 w-full p-8 over" id="companies">
       {products.map((product, index) => (
         <a
           href={product.url}

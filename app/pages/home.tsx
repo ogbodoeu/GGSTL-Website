@@ -20,12 +20,12 @@ export default function HomePage() {
         <section className="snap-start flex items-center justify-center">
           <AboutSection />
         </section>
-        {/* <section className="snap-start flex items-center justify-center">
-          <Products />
-        </section> */}
         <section className="snap-start flex items-center justify-center">
-          <Solutions />
+          <Products />
         </section>
+        {/* <section className="snap-start flex items-center justify-center">
+          <Solutions />
+        </section> */}
         <section className="snap-start flex items-center justify-center">
           <ContactForm color="primary-gray" />
         </section>
