@@ -9,16 +9,16 @@ export default function MoneyTransferPage() {
         alt="Money Transfer"
         className="mr-4 w-full max-h-60 object-scale-down"
       />
-      <div className="flex flex-col items-center px-12">
-        <h3 className="text-primary-pink">Security in Transfer</h3>
-        <p className="text-primary-gray">
+      <div className="flex flex-col items-center p-6">
+        <h2 className="text-primary-pink text-4xl">Security in Transfer</h2>
+        {/* <p className="text-primary-gray">
           Here you can write informations about how the transferences work and how people can do it
           in this site. Its important to explain everything, so your clients will be well informed
           and less people will ask for help.
-        </p>
+        </p> */}
       </div>
       <div className="w-[90%] flex justify-center items-center">
-        <Carousel />
+        {/* <Carousel /> */}
       </div>
       <div className="flex flex-col items-center">
         <MoneyTransfer />
