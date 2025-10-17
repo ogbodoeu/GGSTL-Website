@@ -1,7 +1,7 @@
 export default function SmartChargeWash() {
   const solution = {
-    title: "Smart Charge&Wash",
-    imageName: "GileadChargeWash.png",
+    title: 'Smart Charge&Wash',
+    imageName: 'GileadChargeWash.png',
   };
 
   return (

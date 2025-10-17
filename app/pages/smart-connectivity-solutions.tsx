@@ -2,15 +2,15 @@ import UnderConstruction from './smart-medx';
 import { Outlet } from 'react-router';
 export default function SmartConnectivitySolutions() {
   const solution = {
-    title: "Smart Connectivity Solutions",
-    imageName: "SmartConnectivitySolutions.png",
+    title: 'Smart Connectivity Solutions',
+    imageName: 'SmartConnectivitySolutions.png',
   };
   return (
     <main className="min-h-screen flex flex-col items-center justify-center p-8 text-center">
       <img
-          src={`/images/${solution.imageName}`}
-          alt={solution.title}
-          className="w-40 h-40 object-contain"
+        src={`/images/${solution.imageName}`}
+        alt={solution.title}
+        className="w-40 h-40 object-contain"
       />
       <h1 className="text-2xl font-bold mb-6">
         Gilead Smart Connectivity Solutions (SCS)™ — Private 5G & Edge

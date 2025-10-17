@@ -5,12 +5,6 @@ export default function Solutions() {
 
   const solutions = [
     {
-      title: 'Gilead SwiftRoute™ — Flights & Fintech',
-      description:
-        'Vision: A world where booking travel and moving money across borders is instant, transparent, and trusted.\nMission: Build a unified platform that pairs smart flight search with compliant, secure remittances—delivering fair pricing, seamless UX, and reliable payouts across Africa–Americas corridors.',
-      imageName: 'SwiftRoute.png',
-    },
-    {
       title: 'Gilead SmartMedX™ — AI Health Diagnostics',
       description:
         'Vision: Timely, high-quality diagnostics for every clinic—regardless of location.\nMission: Deploy privacy-preserving AI that ingests DICOM studies, automates structured findings, and enables secure telehealth collaboration to reduce time-to-diagnosis and improve outcomes.',
@@ -51,6 +45,31 @@ export default function Solutions() {
       <h2 className="text-3xl font-bold text-primary-gray text-center mb-8">Solutions</h2>
 
       <div className="space-y-4">
+        <div
+          className="border-2 border-primary-gray rounded-xl overflow-hidden transition-all cursor-pointer hover:shadow-lg"
+          onClick={() => (window.location.href = '/swift-route/money-transfer')}
+        >
+          <div className="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary-gray">
+            <div className="flex items-center gap-4">
+              <img
+                src="/images/SwiftRoute.png"
+                alt="Gilead SwiftRoute™ — Flights & Fintech"
+                className="w-12 h-12 object-contain"
+              />
+              <span>Gilead SwiftRoute™ — Flights & Fintech</span>
+            </div>
+          </div>
+          {/* <div className="p-4"> */}
+            {/* <p className="whitespace-pre-line text-sm text-gray-700 leading-relaxed">
+              Vision: A world where booking travel and moving money across borders is instant,
+              transparent, and trusted.
+              {'\n'}
+              Mission: Build a unified platform that pairs smart flight search with compliant,
+              secure remittances—delivering fair pricing, seamless UX, and reliable payouts across
+              Africa-Americas corridors.
+            </p> */}
+          {/* </div> */}
+        </div>
         {solutions.map((solution, index) => (
           <div
             key={index}

@@ -17,9 +17,7 @@ export default function MoneyTransferPage() {
           and less people will ask for help.
         </p> */}
       </div>
-      <div className="w-[90%] flex justify-center items-center">
-        {/* <Carousel /> */}
-      </div>
+      <div className="w-[90%] flex justify-center items-center">{/* <Carousel /> */}</div>
       <div className="flex flex-col items-center">
         <MoneyTransfer />
       </div>

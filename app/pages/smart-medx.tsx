@@ -1,8 +1,7 @@
-
 export default function SmartMedX() {
   const solution = {
-    title: "SmartMedX",
-    imageName: "SmartMedX.png",
+    title: 'SmartMedX',
+    imageName: 'SmartMedX.png',
   };
 
   return (
@@ -12,9 +11,7 @@ export default function SmartMedX() {
         alt={solution.title}
         className="w-40 h-40 object-contain"
       />
-      <h1 className="text-2xl font-bold mb-6">
-        Gilead SmartMedX™ — AI Health Diagnostics
-      </h1>
+      <h1 className="text-2xl font-bold mb-6">Gilead SmartMedX™ — AI Health Diagnostics</h1>
       <section className="max-w-xl space-y-4">
         <p>
           <strong>Vision:</strong> Timely, high-quality diagnostics for every clinic—regardless of
