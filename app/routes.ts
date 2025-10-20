@@ -2,6 +2,7 @@ import { index, layout, route, type RouteConfig } from '@react-router/dev/routes
 
 export default [
   index('./pages/home.tsx'),
+  route('/swift-route/decision', './pages/swift-route-decision.tsx'),
   layout('./pages/layout/swift-route.tsx', [
     route('/swift-route', './pages/swift-route.tsx'),
     route('/swift-route/money-transfer', './pages/money-transfer.tsx'),

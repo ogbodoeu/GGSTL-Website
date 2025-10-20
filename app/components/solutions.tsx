@@ -47,7 +47,7 @@ export default function Solutions() {
       <div className="space-y-4">
         <div
           className="border-2 border-primary-gray rounded-xl overflow-hidden transition-all cursor-pointer hover:shadow-lg"
-          onClick={() => (window.location.href = '/swift-route/money-transfer')}
+          onClick={() => (window.location.href = '/swift-route/decision')}
         >
           <div className="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary-gray">
             <div className="flex items-center gap-4">
@@ -60,7 +60,7 @@ export default function Solutions() {
             </div>
           </div>
           {/* <div className="p-4"> */}
-            {/* <p className="whitespace-pre-line text-sm text-gray-700 leading-relaxed">
+          {/* <p className="whitespace-pre-line text-sm text-gray-700 leading-relaxed">
               Vision: A world where booking travel and moving money across borders is instant,
               transparent, and trusted.
               {'\n'}
