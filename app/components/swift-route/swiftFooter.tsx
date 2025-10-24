@@ -4,7 +4,7 @@ export const SwiftFooter = () => {
   return (
     <footer className="bg-btn-primary-hover-swift text-white p-6 md:px-20 flex flex-row justify-around content-around items-center gap-4">
       <div className="text-lg font-bold  md:flex-row justify-around gap-8 md:gap-4">
-        Gilead Global System Technologies Ltd.
+        Copyright 2025 Gilead Global System Technologies Ltd.
       </div>
 
       <div className="flex flex-row gap-2 text-center md:text-left items-center">
