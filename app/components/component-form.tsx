@@ -86,7 +86,7 @@ export default function ContactForm({ color }: FormProps) {
               onChange={handleChange}
               className="w-5 h-5"
             />
-            <span>I Agree to receive notification by e-mail and cellphone</span>
+            <span>I agree to receive notification by e-mail and cellphone</span>
           </label>
 
           <label className="flex items-center gap-2">
