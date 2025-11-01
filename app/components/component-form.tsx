@@ -51,7 +51,7 @@ export default function ContactForm({ color }: FormProps) {
           <input
             type="email"
             name="email"
-            placeholder="e-mail"
+            placeholder="Email"
             value={form.email}
             onChange={handleChange}
             className="w-1/2 p-3 rounded-full text-black bg-white"
