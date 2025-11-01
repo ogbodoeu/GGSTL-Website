@@ -92,7 +92,7 @@ export default function Navbar({
             Log in
           </a>
           <a href="/login" className="bg-white text-primary-gray px-4 py-2 rounded-3xl">
-            Sign Up
+            Sign up
           </a>
         </div>
       </div>
