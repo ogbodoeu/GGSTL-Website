@@ -18,7 +18,7 @@ function Footer() {
         <div className="flex flex-col gap-2 text-center md:text-left">
           <h3 className="text-lg font-bold">Support</h3>
           <p>SAC: +44 (74) 1835 9263</p>
-          <p>Email: ggstltd@gmail.com</p>
+          <p>Email: info@ggstltd.com</p>
           <p>
             Address: 82A James Carter Road Mildenhall <br /> Suffolk IP287DE United Kingdom
           </p>
