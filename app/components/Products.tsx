@@ -4,7 +4,7 @@ export default function Products() {
       title: 'SwiftRoute',
       description:
         'SwiftRoute is a versatile platform for seamless money remittance and convenient flight booking ✈️, making global transfers and travel planning faster and simpler.',
-      url: '/swift-route/decision',
+      url: 'https://www.trip.com/t/kUSM6OpqpS2',
     },
     {
       title: 'SmartMedX',
