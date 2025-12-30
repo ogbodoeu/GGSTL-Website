@@ -48,11 +48,11 @@ export default function Solutions() {
         <div
           className="border-2 border-primary-gray rounded-xl overflow-hidden transition-all cursor-pointer hover:shadow-lg"
           onClick={() => {
-  window.open(
-    "https://www.trip.com/t/kUSM6OpqpS2",
-    "_blank",
-    "noopener,noreferrer"
-  );
+  if (solution.url.startsWith('http')) {
+    window.open(solution.url, '_blank', 'noopener,noreferrer');
+  } else {
+    window.location.href = solution.url;
+  }
 }}
 
         >
