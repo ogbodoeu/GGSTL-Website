@@ -47,7 +47,14 @@ export default function Solutions() {
       <div className="space-y-4">
         <div
           className="border-2 border-primary-gray rounded-xl overflow-hidden transition-all cursor-pointer hover:shadow-lg"
-          onClick={() => (window.location.href = '/swift-route/decision')}
+          onClick={() => {
+  window.open(
+    "https://www.trip.com/t/kUSM6OpqpS2",
+    "_blank",
+    "noopener,noreferrer"
+  );
+}}
+
         >
           <div className="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary-gray">
             <div className="flex items-center gap-4">
