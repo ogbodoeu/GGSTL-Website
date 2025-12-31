@@ -5,7 +5,7 @@ export default function ServiceCards() {
       emoji: '✈️',
       description:
         'Search and book flights to destinations worldwide with the best prices and options.',
-      https://www.trip.com/t/JcLp0yZAuS2,
+      '/https://www.trip.com/t/JcLp0yZAuS2',
     },
     {
       title: 'Transfer Money',
