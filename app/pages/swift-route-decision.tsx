@@ -5,7 +5,7 @@ export default function ServiceCards() {
       emoji: '✈️',
       description:
         'Search and book flights to destinations worldwide with the best prices and options.',
-      url: '/swift-route',
+      url: 'https://www.trip.com/t/kUSM6OpqpS2',
     },
     {
       title: 'Transfer Money',
