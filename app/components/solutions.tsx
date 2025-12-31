@@ -49,7 +49,7 @@ export default function Solutions() {
           className="border-2 border-primary-gray rounded-xl overflow-hidden transition-all cursor-pointer hover:shadow-lg"
       onClick={() => {
   window.open(
-    "https://www.trip.com/t/kUSM6OpqpS2",
+    "https://www.trip.com/t/JcLp0yZAuS2",
     "_blank",
     "noopener,noreferrer"
   );
