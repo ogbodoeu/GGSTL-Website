@@ -13,6 +13,7 @@ export default function ServiceCards() {
       emoji: '💸',
       description: 'Send money securely and instantly to friends and family across the globe.',
       url: '/swift-route/money-transfer',
+      url: 'https://wise.prf.hn/l/4PReX5q/',
     },
   ];
 
