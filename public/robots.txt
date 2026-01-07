@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ggstltd.com/sitemap.xml
