@@ -6,9 +6,8 @@ export const meta: MetaFunction = () => [
   {
     name: "description",
     content:
-      "Send money internationally with SwiftRoute using trusted partners like Wise.",
+      "Send money internationally with SwiftRoute using trusted partners like Wise, WorldRemit, Remitly, and more.",
   },
-  { rel: "canonical", href: "https://ggstltd.com/remittance" },
 ];
 
 export default function RemittancePage() {
@@ -16,15 +15,15 @@ export default function RemittancePage() {
     <main>
       <h1>Money Remittance</h1>
       <p>Select a trusted partner to send money internationally.</p>
+
       <MoneyTransfer />
-/* ✅ SEO content block (adds indexable text) */}
-      <section style={{ marginTop: "2rem" }}>
+
+      <section style={{ marginTop: "2.5rem", maxWidth: 900 }}>
         <h2>International Money Transfer with SwiftRoute</h2>
         <p>
           SwiftRoute helps users send money internationally using trusted global
-          partners with competitive exchange rates, low fees, and fast delivery.
-          Choose your preferred payout method and complete your transfer
-          securely.
+          partners. Compare options, payout methods, and fees on trusted provider
+          platforms before completing your transfer.
         </p>
       </section>
     </main>
