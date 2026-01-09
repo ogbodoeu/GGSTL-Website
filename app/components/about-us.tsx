@@ -1,4 +1,4 @@
-ureexport default function AboutSection() {
+export default function AboutSection() {
   return (
     <section className="w-full bg-white" id="about">
       <div className="max-w-6xl mx-auto px-6">
