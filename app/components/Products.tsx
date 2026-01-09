@@ -14,9 +14,9 @@ export default function Products() {
       url: '/smart-medx',
     },
     {
-      title: 'Smart Connectivity Solutions & Vehicle tracking',
+      title: 'Smart Connectivity Solutions and Vehicle tracking',
       description:
-        'Gilead Smart Connectivity Solutions & Vehicle Tracking delivers advanced connectivity and communication solutions, offering reliable vehicle tracking installation and comprehensive fleet management.',
+        'Gilead Smart Connectivity Solutions and Vehicle Tracking delivers advanced connectivity and communication solutions, offering reliable vehicle tracking installation and comprehensive fleet management.',
       url: '/smart-connectivity-solutions',
     },
   ];
