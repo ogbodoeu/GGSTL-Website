@@ -3,7 +3,7 @@ export default function Products() {
     {
       title: 'SwiftRoute',
       description:
-        'Gilead SwiftRoute is an all-in-one platform for secure international money transfers and cheap flight booking ✈️, helping users move money globally and plan travel easily through trusted partners like Trip.com, Wise, and more.',
+        'Gilead SwiftRoute is an all-in-one platform for secure international money transfers and cheap flight booking ✈️, helping users move money globally and plan travel easily through trusted partners like Trip.com, Wise.com, and more.',
       url: '/swift-route/decision'
 ,
     },
