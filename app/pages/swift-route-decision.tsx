@@ -4,7 +4,7 @@ export default function ServiceCards() {
       title: 'Book a Flight',
       emoji: '✈️',
       description:
-        'Search and book flights to destinations worldwide with the best prices and options.',
+        'Search and book flights to destinations worldwide with the best prices and options from our trusted partners.',
       url: '/swift-route',
       url: 'https://www.trip.com/t/JcLp0yZAuS2',
     },
