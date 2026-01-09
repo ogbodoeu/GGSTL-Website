@@ -4,14 +4,14 @@ export default function ServiceCards() {
       title: 'Book a Flight',
       emoji: '✈️',
       description:
-        'Search and book flights to destinations worldwide with the best prices and options from our trusted partners.',
+        'Gilead SwiftRoute enables you to search and book flights to destinations worldwide with the best prices and options from our trusted partners. Book your flight with confidence today.',
       url: '/swift-route',
       url: 'https://www.trip.com/t/JcLp0yZAuS2',
     },
     {
       title: 'Transfer Money',
       emoji: '💸',
-      description: 'Send money securely and instantly through our trusted global partners to friends and family worldwide.',
+      description: 'Gilead SwiftRoute enables you to send money securely and instantly through our trusted global partners to friends and family worldwide. Make your money transfer with confidence today.',
       url: '/swift-route/money-transfer',
       url: 'https://wise.prf.hn/l/4PReX5q/',
     },
