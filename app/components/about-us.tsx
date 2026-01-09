@@ -1,4 +1,4 @@
-export default function AboutSection() {
+ureexport default function AboutSection() {
   return (
     <section className="w-full bg-white" id="about">
       <div className="max-w-6xl mx-auto px-6">
@@ -12,7 +12,7 @@ export default function AboutSection() {
           {/* Text */}
           <div className="w-full md:w-1/2 text-gray-700 text-sm leading-relaxed">
             <p>
-              Gilead has been making lives better by driving innovation in healthcare, technology,
+              Gilead has been making lives better by driving innovation in FinTech (Money transfer/remittance), Air travel (cheap flight booking), healthcare, technology,
               and global connectivity. Gilead is registered and incorporated in the UK.
             </p>
           </div>
