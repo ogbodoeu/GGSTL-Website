@@ -10,7 +10,7 @@ export default function Introduction() {
         <p className="text-lg md:text-xl text-gray-600 max-w-4xl text-center">
   Transforming advanced research into practical digital technologies through
   Artificial Intelligence (AI), private 5G and 6G networks, Open Radio Access
-  Network (Open RAN), cloud native infrastructure, cybersecurity and intelligent
+  Network (O-RAN), cloud native infrastructure, cybersecurity and intelligent
   systems for healthcare, digital agriculture, enterprise connectivity and smart
   infrastructure.
 </p>
