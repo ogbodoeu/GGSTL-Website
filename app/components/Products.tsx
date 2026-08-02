@@ -4,21 +4,21 @@ export default function Products() {
       title: "SwiftRoute",
       logoKey: "SwiftRoute",
       description:
-        "Gilead SwiftRoute is an all-in-one platform for secure international money transfers and cheap flight booking ✈️, helping users find cheap flights, move     money globally, and plan travel easily through trusted partners like trip.com, wise.com, and more.",
+        "Gilead SwiftRoute is an intelligent digital mobility platform that integrates secure international payments, travel services and AI-enabled journey management through trusted technology partners.",
       url: "/swift-route/decision",
     },
     {
       title: "SmartMedX",
       logoKey: "SmartMedX",
       description:
-        "Gilead SmartMedX integrates artificial intelligence with medical expertise to deliver smarter diagnostics, treatment insights, and healthcare solutions.",
+        "Gilead SmartMedX integrates artificial intelligence (AI) with medical expertise to deliver smarter diagnostics, treatment insights, and healthcare solutions.",
       url: "/smart-medx",
     },
     {
       title: "Smart Connectivity Solutions & Vehicle Tracking",
       logoKey: "SmartConnectivitySolutions",
       description:
-        "Gilead Smart Connectivity Solutions and Vehicle Tracking delivers advanced connectivity and communication solutions, offering reliable vehicle tracking installation and comprehensive fleet management.",
+        "Smart Connectivity Solutions develops intelligent telecommunications technologies including private 5G and 6G networks, Open Radio Access Network (Open RAN), cloud-native networking, Internet of Things (IoT), edge computing, secure enterprise connectivity, Surveillance, and Vehicle Tracking Solutions",
       url: "/smart-connectivity-solutions",
     },
   ];
