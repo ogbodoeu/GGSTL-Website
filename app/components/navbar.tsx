@@ -71,7 +71,7 @@ export default function Navbar({
               }
             }}
           >
-            Companies
+            Products
           </a>
           <a
             href="/contact"
