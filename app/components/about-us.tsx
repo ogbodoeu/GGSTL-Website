@@ -50,7 +50,7 @@ export default function AboutSection() {
               <img src="/icons/Diamond.png" alt="Values Icon" className="w-12 h-12" />
             </div>
             <h3 className="text-lg font-semibold">Values</h3>
-            <ul className="text-sm text-gray-600 list-disc list-inside space-y-1">
+            <ul className="mt-3 mx-auto w-fit text-left text-sm text-gray-600 list-disc space-y-1 pl-5">
   <li>Innovation</li>
   <li>Research Translation</li>
   <li>Integrity</li>
