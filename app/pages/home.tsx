@@ -6,6 +6,7 @@ import Introduction from '~/components/introduction';
 import Navbar from '~/components/navbar';
 import Products from '~/components/Products';
 import Solutions from '~/components/solutions';
+import TrustedPartners from '~/components/trusted-partners';
 
 export default function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,23 +14,35 @@ export default function HomePage() {
   return (
     <>
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+
       <main className="snap-y snap-mandatory overflow-y-scroll flex flex-col bg-white text-primary-gray text-center">
+
         <section className="snap-start flex items-center justify-center">
           <Introduction />
         </section>
+
         <section className="snap-start flex items-center justify-center">
           <AboutSection />
         </section>
+
         <section className="snap-start flex items-center justify-center">
           <Products />
         </section>
+
+        <section className="snap-start flex items-center justify-center">
+          <TrustedPartners />
+        </section>
+
         {/* <section className="snap-start flex items-center justify-center">
           <Solutions />
         </section> */}
+
         <section className="snap-start flex items-center justify-center">
           <ContactForm color="primary-gray" />
         </section>
+
       </main>
+
       <Footer />
     </>
   );
