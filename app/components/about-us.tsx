@@ -12,8 +12,7 @@ export default function AboutSection() {
           {/* Text */}
           <div className="w-full md:w-1/2 text-gray-700 text-sm leading-relaxed">
             <p>
-              Gilead has been making lives better by driving innovation in FinTech (Money transfer/remittance), Air travel (cheap flight booking), healthcare, technology,
-              and global connectivity. Gilead is registered and incorporated in the UK.
+              Gilead Global Systems Technologies Ltd (GGSTL) is a UK incorporated digital technology and research translation company developing intelligent, secure and scalable solutions in Artificial Intelligence (AI), private 5G and 6G networks, Open Radio Access Network (O-RAN), cloud native infrastructure, cybersecurity, Internet of Things (IoT), Industrial IoT (IIoT), multi access edge computing (MEC) and digital transformation. Our technologies support digital agriculture, eHealth, enterprise connectivity and smart infrastructure.
             </p>
           </div>
         </div>
@@ -29,8 +28,8 @@ export default function AboutSection() {
             </div>
             <h3 className="text-lg font-semibold">Mission</h3>
             <p className="text-sm text-gray-600">
-              To harness the power of science, data, and intelligent systems to deliver better
-              healthcare solutions, seamless travel, and secure financial services.
+          To translate research in Artificial Intelligence, advanced telecommunications,
+          cloud computing and intelligent systems into secure, practical and scalable digital solutions.
             </p>
           </div>
 
@@ -41,10 +40,7 @@ export default function AboutSection() {
             </div>
             <h3 className="text-lg font-semibold">Vision</h3>
             <p className="text-sm text-gray-600">
-              Make advanced digital infrastructure simple, secure, and accessible—so travel,
-              payments, healthcare, connectivity, agriculture, and everyday services work seamlessly
-              everywhere, powered by AI, private 5G/edge, and cloud-native engineering for reliable,
-              affordable, and sustainable impact.
+            To become a trusted international provider of intelligent and sustainable digital technologies connecting people, organisations and communities.
             </p>
           </div>
 
@@ -54,15 +50,21 @@ export default function AboutSection() {
               <img src="/icons/Diamond.png" alt="Values Icon" className="w-12 h-12" />
             </div>
             <h3 className="text-lg font-semibold">Values</h3>
-            <p className="text-sm text-gray-600">
-              Deliver practical, compliant platforms with transparent pricing and measurable
-              outcomes: SwiftRoute (flights & remittance), SmartMedX (AI diagnostics), SCS
-              (Open5GS/O-RAN private networks), SmartAgTech (precision farming, field connectivity &
-              insights), EdgeShield DevSecOps (secure software delivery), and Charge&Wash (cashless
-              EV charging & laundromats). We build reliably, scale efficiently, protect data by
-              design, and partner with clients across emerging and developed markets to turn complex
-              technology into everyday value.
-            </p>
+            <ul className="text-sm text-gray-600 list-disc list-inside space-y-1">
+  <li>Innovation</li>
+  <li>Research Translation</li>
+  <li>Integrity</li>
+  <li>Security</li>
+  <li>Collaboration</li>
+  <li>Excellence</li>
+</ul>
+
+<p className="mt-3 text-sm text-gray-600">
+  We transform advanced research into practical digital technologies by developing secure,
+  scalable and intelligent solutions. We are committed to technical excellence, responsible
+  innovation, research translation and trusted partnerships that deliver measurable impact
+  across telecommunications, healthcare, digital agriculture and enterprise technologies.
+</p>
           </div>
         </div>
       </div>
