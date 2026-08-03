@@ -102,7 +102,9 @@ export default function ContactForm({ color }: FormProps) {
               onChange={handleChange}
               className="w-5 h-5"
             />
-            <span>I agree to share my question with the database and searches</span>
+            <span>
+  I consent to GGSTL storing and processing my information to respond to this enquiry.
+</span>
           </label>
         </div>
 
