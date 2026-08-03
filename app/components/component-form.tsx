@@ -14,19 +14,56 @@ export default function ContactForm({ color }: FormProps) {
     share: false,
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    // not functional
-    const { name, value } = e.target;
-    setForm((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
+  const handleChange = (
+  e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+) => {
+  const { name, value, type } = e.target;
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log(form);
-  };
+  const fieldValue =
+    type === 'checkbox'
+      ? (e.target as HTMLInputElement).checked
+      : value;
+
+  setForm((prev) => ({
+    ...prev,
+    [name]: fieldValue,
+  }));
+};
+
+  const [status, setStatus] = useState('');
+  
+
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setStatus('Sending...');
+
+  try {
+    const response = await fetch('https://formspree.io/f/mwvggqvy', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify(form),
+    });
+
+    if (!response.ok) {
+      throw new Error('Submission failed');
+    }
+
+    setStatus('Thank you. Your message has been sent successfully.');
+    setForm({
+      name: '',
+      email: '',
+      phone: '',
+      message: '',
+      notify: false,
+      share: false,
+    });
+  } catch {
+    setStatus('Sorry, your message could not be sent. Please try again.');
+  }
+};
 
   return (
     <div
@@ -115,6 +152,11 @@ export default function ContactForm({ color }: FormProps) {
         >
           Send
         </button>
+        {status && (
+  <p className="text-center text-white mt-4">
+    {status}
+  </p>
+)}
       </form>
     </div>
   );
