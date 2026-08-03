@@ -3,7 +3,7 @@ export default function TrustedPartners() {
     <section className="w-full bg-gray-50 py-16 border-t border-b">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-4xl font-bold text-gray-800">
-          Trusted Service Partners
+          Trusted Technology & Service Partners
         </h2>
 
         <p className="mt-6 text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
