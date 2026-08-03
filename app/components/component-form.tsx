@@ -62,16 +62,17 @@ export default function ContactForm({ color }: FormProps) {
             className="w-1/2 p-3 rounded-full text-black bg-white"
           />
           <div className="flex items-center w-1/2 bg-white rounded-full overflow-hidden">
-            <span className="px-2">🌍</span>
-            <input
-              type="text"
-              name="phone"
-              placeholder="+44 or International Phone Number"
-              value={form.phone}
-              onChange={handleChange}
-              className="flex-1 p-3 rounded-r-full text-black outline-none bg-white"
-            />
-          </div>
+  <span className="px-3">🌍</span>
+
+  <input
+    type="text"
+    name="phone"
+    placeholder="+Country Code Phone Number"
+    value={form.phone}
+    onChange={handleChange}
+    className="flex-1 p-3 rounded-r-full text-black outline-none bg-white"
+  />
+</div>
         </div>
 
         <textarea
