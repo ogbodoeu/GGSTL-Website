@@ -62,12 +62,8 @@ export default function TrustedPartners() {
         </div>
 
         <p className="mt-10 text-sm text-gray-500 max-w-5xl mx-auto">
-          <strong>Disclaimer:</strong> Flight booking and international money
-          transfer services are provided directly by independent third-party
-          partners. GGSTL does not operate airline reservation systems, process
-          customer payments or execute money transfers. GGSTL may receive a
-          referral commission from qualifying transactions completed through
-          these trusted partners.
+          <strong>Disclaimer:</strong> Flight booking and international payment services are provided by independent third-party partners.
+          GGSTL may receive referral commissions from qualifying transactions.
         </p>
       </div>
     </section>
