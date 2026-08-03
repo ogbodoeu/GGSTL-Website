@@ -34,9 +34,14 @@ export default function ContactForm({ color }: FormProps) {
       id="contact"
     >
       <form onSubmit={handleSubmit} className="text-white p-8 rounded-lg max-w-2xl space-y-4">
-        <h2 className="text-2xl font-semibold">
-          <span className="text-white">Contact Us</span>
-        </h2>
+        <h2 className="text-3xl font-semibold text-center">
+  <span className="text-white">Contact GGSTL</span>
+</h2>
+
+<p className="text-center text-gray-200 max-w-2xl mx-auto leading-relaxed">
+  We'd be pleased to discuss research collaboration, technology partnerships,
+  digital transformation projects, and business enquiries.
+</p>
 
         <input
           type="text"
