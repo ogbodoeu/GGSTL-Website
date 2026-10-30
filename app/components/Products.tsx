@@ -21,19 +21,29 @@ export default function Products() {
         "Smart Connectivity Solutions develops intelligent telecommunications technologies including private 5G and 6G networks, Open Radio Access Network (Open RAN), cloud-native networking, Internet of Things (IoT), edge computing, secure enterprise connectivity, Surveillance, and Vehicle Tracking Solutions",
       url: "/smart-connectivity-solutions",
     },
+    {
+      title: "GGSTL Global Connect",
+      logoKey: "GGSTLGlobalConnect",
+      description:
+        "GGSTL Global Connect is our international connectivity platform for global eSIM data services, supported voice and SMS packages, and planned internet-based international calling. Explore our live demo portal while commercial services are being prepared for launch.",
+      url: "https://connect.ggstltd.com",
+    },
   ];
-
   return (
-    <div className="flex flex-col sm:flex-row gap-8 w-full p-8 over" id="companies">
+<div
+  className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 w-full p-8"
+  id="companies"
+>
       {products.map((product, index) => (
         <a
           href={product.url}
-          className="bg-inherit border-2 border-primary-gray min-h-96 w-full md:w-1/3 rounded-lg p-6 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
+          target={product.url.startsWith("https://") ? "_blank" : undefined}
+          rel={product.url.startsWith("https://") ? "noopener noreferrer" : undefined}
+          className="bg-inherit border-2 border-primary-gray min-h-96 w-full rounded-lg p-6 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
           key={index}
         >
           <div className="p-4 flex flex-col items-center overflow-hidden ">
             <h4 className="text-lg font-semibold mb-2 text-inherit">{product.title}</h4>
-
             <img
               src={`/images/${product.logoKey}.png`}
               alt={`${product.title} logo`}
