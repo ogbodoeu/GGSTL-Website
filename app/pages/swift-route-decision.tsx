@@ -6,54 +6,34 @@ export default function ServiceCards() {
       </h1>
 
       <p className="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed">
-        Gilead SwiftRoute is an intelligent digital mobility platform designed
-        to simplify international travel planning, cross-border payment access
-        and journey management through secure digital technologies and trusted
-        service providers.
+        SwiftRoute is GGSTL&apos;s digital travel and international money-transfer
+        portal. Explore international flight options and a developing
+        cross-border transfer experience in one place.
       </p>
 
-      <p className="mt-5 text-base md:text-lg text-gray-600 leading-relaxed">
-        The platform brings together travel information, booking access,
-        payment support and AI-enabled journey guidance within a unified
-        digital experience. It is intended to help individuals, families and
-        businesses plan international journeys more efficiently while
-        maintaining transparency, convenience and security.
-      </p>
-
-      <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
         <div className="border-2 border-primary-gray rounded-xl p-6 shadow-md">
-          <h2 className="text-xl font-semibold text-gray-800">
-            Intelligent Travel Planning
-          </h2>
-
+          <h2 className="text-xl font-semibold text-gray-800">International Flight Search</h2>
           <p className="mt-3 text-gray-600">
-            Supports informed journey planning through digital tools, travel
-            information and access to trusted external booking platforms.
+            Search and compare flight options in our test environment.
+            Live ticket booking and payment are not yet available.
           </p>
+          <a href="https://swift.ggstltd.com" target="_blank" rel="noopener noreferrer"
+             className="mt-6 inline-block rounded-lg bg-gray-800 px-5 py-3 font-semibold text-white hover:bg-gray-700">
+            Search Flights
+          </a>
         </div>
 
         <div className="border-2 border-primary-gray rounded-xl p-6 shadow-md">
-          <h2 className="text-xl font-semibold text-gray-800">
-            Secure Payment Access
-          </h2>
-
+          <h2 className="text-xl font-semibold text-gray-800">International Money Transfer</h2>
           <p className="mt-3 text-gray-600">
-            Connects users to established international payment providers for
-            eligible cross-border transactions without GGSTL holding or
-            processing customer funds.
+            Preview SwiftRoute&apos;s developing money-transfer experience.
+            No live transfers, payments, or exchange-rate quotations are available.
           </p>
-        </div>
-
-        <div className="border-2 border-primary-gray rounded-xl p-6 shadow-md">
-          <h2 className="text-xl font-semibold text-gray-800">
-            AI-Enabled Journey Support
-          </h2>
-
-          <p className="mt-3 text-gray-600">
-            Supports the future provision of intelligent guidance,
-            personalised travel assistance and improved digital mobility
-            experiences.
-          </p>
+          <a href="https://swift.ggstltd.com" target="_blank" rel="noopener noreferrer"
+             className="mt-6 inline-block rounded-lg bg-gray-800 px-5 py-3 font-semibold text-white hover:bg-gray-700">
+            Explore Transfers
+          </a>
         </div>
       </div>
     </section>
