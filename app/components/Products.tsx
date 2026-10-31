@@ -4,8 +4,8 @@ export default function Products() {
       title: "SwiftRoute",
       logoKey: "SwiftRoute",
       description:
-        "Gilead SwiftRoute is an intelligent digital mobility platform that integrates secure international payments, travel services and AI-enabled journey management through trusted technology partners.",
-      url: "/swift-route/decision",
+        "Explore GGSTL SwiftRoute for international flight searches and a developing international money-transfer service. Flight booking and money transfers are not yet available for live transactions.",
+      url: "https://swift.ggstltd.com",
     },
     {
       title: "SmartMedX",
