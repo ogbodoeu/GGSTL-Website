@@ -22,7 +22,7 @@ export default function TrustedPartners() {
               test environment. Live ticket booking and payment are not yet available.
             </p>
             <a
-              href="https://swift.ggstltd.com/?service=flights"
+              href="https://swift.ggstltd.com"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-8 px-8 py-3 rounded-lg border border-gray-400 hover:bg-gray-100 transition font-medium"
@@ -41,7 +41,7 @@ export default function TrustedPartners() {
               Live transfers, payments, and exchange-rate quotations are not yet available.
             </p>
             <a
-              href="https://swift.ggstltd.com/?service=transfers"
+              href="https://swift.ggstltd.com"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-8 px-8 py-3 rounded-lg border border-gray-400 hover:bg-gray-100 transition font-medium"
