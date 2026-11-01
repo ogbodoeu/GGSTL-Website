@@ -25,7 +25,7 @@ export default function Products() {
       title: "GGSTL Global Connect",
       logoKey: "GGSTLGlobalConnect",
       description:
-        "GGSTL Global Connect is our international connectivity platform for global eSIM data services, supported voice and SMS packages, and planned internet-based international calling. Explore our live demo portal while commercial services are being prepared for launch.",
+        "GGSTL Global Connect is our developing prepaid international calling platform. Make calls to mobile and landline numbers using your existing Wi-Fi or mobile internet connection. Explore the demonstration portal while live calling and payments are being prepared for launch.",
       url: "https://connect.ggstltd.com",
     },
   ];
