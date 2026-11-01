@@ -18,7 +18,7 @@ export default function ServiceCards() {
             Search and compare flight options in our test environment.
             Live ticket booking and payment are not yet available.
           </p>
-          <a href="https://swift.ggstltd.com/?service=flights" target="_blank" rel="noopener noreferrer"
+          <a href="https://swift.ggstltd.com" target="_blank" rel="noopener noreferrer"
              className="mt-6 inline-block rounded-lg bg-gray-800 px-5 py-3 font-semibold text-white hover:bg-gray-700">
             Search Flights
           </a>
@@ -30,7 +30,7 @@ export default function ServiceCards() {
             Preview SwiftRoute&apos;s developing money-transfer experience.
             No live transfers, payments, or exchange-rate quotations are available.
           </p>
-          <a href="https://swift.ggstltd.com/?service=transfers" target="_blank" rel="noopener noreferrer"
+          <a href="https://swift.ggstltd.com" target="_blank" rel="noopener noreferrer"
              className="mt-6 inline-block rounded-lg bg-gray-800 px-5 py-3 font-semibold text-white hover:bg-gray-700">
             Explore Transfers
           </a>
